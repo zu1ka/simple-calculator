@@ -12,15 +12,10 @@ console.log("3 = Multiply")
 console.log("4 = Divide")
 // Ask the user which operation
 
-// const choice = prompt("Enter the number of the operation you want: ");
-// Ask user which operation
 
-// if (choice !== "1" && choice !== "2" && choice !== "3" && choice !== "4") { // checking if user input prompted numbers 1-4
-//   console.log("Invalid operation. Please restart the calculator.");
-//  process.exit(); // stops the program immediately if they didn't
-// }
-/*  top vs bottom is choice to break loop immediately or bottom loops infinitely till valid input for now give them the tries    */
-for (;;) { // infinite loop
+
+
+for (;;) { // infinite loop that will only break when input is valid
   choice = prompt("Enter the operation (1-4): ");
   if (choice === "1" || choice === "2" || choice === "3" || choice === "4") {
     break; // valid input → exit loop
